@@ -2,7 +2,6 @@
 # This script monitors file changes and automatically commits and pushes to GitHub
 
 $repoPath = "d:\work"
-$gitIgnorePatterns = @("*.mat", "*.nc", "*.jpg", "*.png", "*.zip", "Figures\")
 $checkInterval = 30  # seconds
 
 function Test-GitChanges {
@@ -21,8 +20,8 @@ function Invoke-GitCommitAndPush {
     # Commit with timestamp
     git commit -m "Auto-sync: $timestamp"
     
-    # Push to remote
-    git push
+    # Push to remote (using token in remote URL)
+    git push origin master
 }
 
 Write-Host "Starting auto-sync monitoring for $repoPath..." -ForegroundColor Green
