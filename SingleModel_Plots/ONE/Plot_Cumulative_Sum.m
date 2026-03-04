@@ -376,40 +376,35 @@ hPan = pan(gcf); hPan.Motion = 'both';
 fprintf('>> 保存结果图...\n');
 
 % 创建保存目录
-save_dir = fullfile('D:\work\Figures', state, dataset_name);
+save_dir = 'd:\work\Figures';
 if ~exist(save_dir, 'dir')
     mkdir(save_dir);
     fprintf('>> 创建保存目录: %s\n', save_dir);
 end
 
-% 获取所有图形窗口
+% 保存所有打开的图形窗口
 figs = findall(0, 'Type', 'figure');
-
-% 保存每个图形
 for i = 1:length(figs)
     fig = figs(i);
-    fig_name = get(fig, 'Name');
-    
-    % 根据图形名称生成文件名
-    if contains(fig_name, 'Trend Cumulative Sum Spatial')
-        filename = sprintf('%s趋势累加和分布图.jpg', dataset_name);
-    elseif contains(fig_name, 'Amplitude Cumulative Sum Spatial')
-        filename = sprintf('%s振幅累加和分布图.jpg', dataset_name);
-    elseif contains(fig_name, 'Trend Cumulative Sum Boxplot')
-        filename = sprintf('%s趋势累加和箱线图.jpg', dataset_name);
-    elseif contains(fig_name, 'Amplitude Cumulative Sum Boxplot')
-        filename = sprintf('%s振幅累加和箱线图.jpg', dataset_name);
-    else
-        filename = sprintf('%s_Figure_%d.jpg', dataset_name, i);
+    if isvalid(fig)
+        % 获取图形名称
+        fig_name = get(fig, 'Name');
+        if isempty(fig_name)
+            fig_name = sprintf('Figure_%d', i);
+        end
+        
+        % 构建文件名
+        filename = sprintf('%s_%s_%s.jpg', dataset_name, state, strrep(fig_name, ' ', '_'));
+        filepath = fullfile(save_dir, filename);
+        
+        % 保存图片
+        saveas(fig, filepath, 'jpg');
+        fprintf('>> 已保存: %s\n', filepath);
     end
-    
-    % 保存图形
-    filepath = fullfile(save_dir, filename);
-    print(fig, filepath, '-djpeg', '-r300');
-    fprintf('>> 已保存: %s\n', filepath);
 end
 
-fprintf('>> 绘图完成！所有图形已保存到: %s\n', save_dir);
+fprintf('>> 绘图完成！\n');
+fprintf('>> 图片已保存到: %s\n', save_dir);
 end
 
 %% ============================================================
