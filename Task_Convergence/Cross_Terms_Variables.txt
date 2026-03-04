@@ -1,0 +1,23 @@
+
+=== 检查文件: d:\work\EN4_TSLA_Terms\EN4_Cross_Terms_1to8_Average.mat ===
+文件包含以下变量:
+  - 名称: Cross_AllOrders, 大小: [360 173 240 8], 类型: single
+  - 名称: lat, 大小: [173 1], 类型: single
+  - 名称: lon, 大小: [360 1], 类型: single
+  - 名称: time_vec, 大小: [1 240], 类型: double
+
+=== 检查文件: d:\work\IAP_mat_data\IAP_Cross_Terms_1to8_Average.mat ===
+文件包含以下变量:
+  - 名称: Cross_AllOrders, 大小: [360 180 240 8], 类型: single
+  - 名称: Time_Axis, 大小: [240 1], 类型: double
+  - 名称: lat, 大小: [180 1], 类型: single
+  - 名称: lon, 大小: [360 1], 类型: single
+
+=== 检查文件: d:\work\IAP_TSLA_Terms\IAP_Cross_Terms_1to8_Average.mat ===
+文件包含以下变量:
+  - 名称: Cross_AllOrders, 大小: [360 180 240 8], 类型: single
+  - 名称: lat, 大小: [180 1], 类型: single
+  - 名称: lon, 大小: [360 1], 类型: single
+  - 名称: time_vec, 大小: [240 1], 类型: double
+
+>>> 检查完成! <<<

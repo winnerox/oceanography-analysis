@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\.m\shell\RunMATLAB]
+[-HKEY_CLASSES_ROOT\.m\shell\RunMATLABSilent]
+[-HKEY_CLASSES_ROOT\matlab.m.1\shell\RunMATLAB]
+[-HKEY_CLASSES_ROOT\matlab.m.1\shell\RunMATLABSilent]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m\shell\RunMATLAB]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m\shell\RunMATLABSilent]

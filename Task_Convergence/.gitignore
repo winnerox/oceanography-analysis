@@ -1,0 +1,25 @@
+# Large binary/data artifacts
+*.mat
+*.nc
+*.h5
+*.hdf5
+*.fig
+*.png
+*.jpg
+*.jpeg
+*.xlsx
+
+# Logs and temporary files
+*.log
+*.asv
+*.tmp
+*.bak
+*.swp
+*.pyc
+__pycache__/
+
+# Generated/output folders
+Amplitude_Results/
+Trend_Results/
+perfect/
+pm25_iraq_china_2003_2011/

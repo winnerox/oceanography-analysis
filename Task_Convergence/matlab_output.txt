@@ -1,0 +1,14 @@
+[警告: 无法识别的命令行选项: nodisplay。] 
+检查 Ishii_CrossDetail_Avg.mat 文件结构...
+{操作在以下过程中被用户终止 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('check_file_structure')" style="font-weight:bold">check_file_structure</a>
+
+
+位置 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'D:\MATLAB 2023\toolbox\matlab\lang\run.m', 99)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('D:\MATLAB 2023\toolbox\matlab\lang\run.m',99,0)">第 99 行</a>)
+evalin('caller', strcat(script, ';'));
+} 
+{操作在以下过程中被用户终止 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('check_file_structure')" style="font-weight:bold">check_file_structure</a>
+
+
+位置 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'D:\MATLAB 2023\toolbox\matlab\lang\run.m', 99)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('D:\MATLAB 2023\toolbox\matlab\lang\run.m',99,0)">第 99 行</a>)
+evalin('caller', strcat(script, ';'));
+} 

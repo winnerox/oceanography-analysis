@@ -1,0 +1,47 @@
+# VCS / tooling
+.git/
+.accelerate/
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
+*.bak
+*.swp
+*.asv
+
+# Large data / binary artifacts
+*.mat
+*.nc
+*.h5
+*.hdf5
+*.fig
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.pdf
+*.xlsx
+*.xls
+*.zip
+*.7z
+*.rar
+*.npy
+*.npz
+*.pkl
+*.onnx
+*.pt
+*.pth
+*.bin
+*.dat
+
+# Logs / outputs
+*.log
+
+# Environment / local configs
+.env
+.venv/
+venv/
+env/
+node_modules/
+
